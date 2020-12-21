@@ -9,7 +9,7 @@ from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
 plt.style.use('fivethirtyeight')
 from keras.models import load_model
-import fix_yahoo_finance as yf
+import yfinance as yf
 import datetime as dt
 import streamlit as st
 from PIL import Image
