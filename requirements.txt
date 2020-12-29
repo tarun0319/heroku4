@@ -3,10 +3,10 @@ pandas==1.1.5
 streamlit==0.73.1
 yfinance==0.1.55
 pandas_datareader==0.9.0
-Keras==2.3.0
+Keras==2.4.0
 Flask==1.1.2
 Werkzeug==1.0.1
 numpy==1.19.4
-tensorflow==2.0.0
+tensorflow==2.1.0
 Pillow==8.0.1
 scikit_learn==0.24.0
