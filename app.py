@@ -117,7 +117,7 @@ def main():
 
     temp_input=list(x_input)
     temp_input=temp_input[0].tolist()
-    model = load_model("Stock_Data/ADANIPORTS.NSmodel.h5")
+    model = load_model("ADANIPORTS.model")
     a = []
     b= []
    
