@@ -111,7 +111,7 @@ def main():
     
     scaler = MinMaxScaler(feature_range=(0, 1)) 
     
-    x_input=new_df[-100:].values
+    x_input=new_df[-30:].values
     x_input = scaler.fit_transform(x_input)
 
     x_input= x_input.reshape(1,-1)
@@ -123,10 +123,10 @@ def main():
     b= []
    
     lst_output=[]
-    n_steps=100
+    n_steps=30
     i=0
     while(i<30):
-      if (len(temp_input)>100):
+      if (len(temp_input)>30):
     #print(temp_input)
         x_input=np.array(temp_input[1:])
         print("{} day input {}".format(i,x_input))
