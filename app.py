@@ -8,7 +8,8 @@ import pandas as pd
 import PIL
 import keras.backend.tensorflow_backend as tb
 tb._SYMBOLIC_SCOPE.value = True
-from keras.models import model_from_yaml
+
+from tensorflow.keras.models import load_model
 
 
 
@@ -81,7 +82,7 @@ def main():
     #Reshape the data
     X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1], 1))
     #load the model
-    model = load_model("ADANIPORTS.model")
+    model = load_model("ADANIPORTS.model",compile = False)
     #Get the predicted scaled price
     pred_price = model.predict(X_test)
     #undo the scaling 
@@ -117,7 +118,7 @@ def main():
 
     temp_input=list(x_input)
     temp_input=temp_input[0].tolist()
-    model = load_model("ADANIPORTS.model")
+    model = load_model("ADANIPORTS.model",compile = False)
     a = []
     b= []
    
