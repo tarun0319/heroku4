@@ -4,7 +4,6 @@ streamlit==0.73.1
 yfinance==0.1.55
 pandas_datareader==0.9.0
 Keras==2.4.3
-Flask==1.1.2
 Werkzeug==1.0.1
 numpy==1.19.4
 tensorflow==2.4.0
