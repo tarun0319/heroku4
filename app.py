@@ -78,7 +78,7 @@ def main():
     #Reshape the data
     X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1], 1))
     #load the model
-    model = load_model("Stock_Data/ADANIPORTS.NSmodel.h5")
+    model = load_model("Stock_Data/ADANIPORTS.NSmodel.h5", compile = False)
     #Get the predicted scaled price
     pred_price = model.predict(X_test)
     #undo the scaling 
