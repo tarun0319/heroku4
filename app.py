@@ -8,6 +8,7 @@ import pandas as pd
 import PIL
 import keras.backend.tensorflow_backend as tb
 tb._SYMBOLIC_SCOPE.value = True
+from keras.models import model_from_yaml
 
 
 
