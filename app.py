@@ -24,7 +24,7 @@ import datetime as dt
 start = dt.datetime(2018, 1, 1)
 end = dt.datetime.now()
 from keras.models import load_model
-from keras.models import model_from_yaml
+
 #Scale the all of the data to be values between 0 and 1 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
